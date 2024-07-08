@@ -1,38 +1,394 @@
-.App {
-  text-align: center;
+@font-face {
+  font-family: Poppins-Black;
+  src: url(../public/fonts/Poppins-Black.ttf);
+}
+ @font-face {
+  font-family: Poppins-Medium;
+  src: url(../public/fonts/Poppins-Medium.ttf);
+} 
+@font-face {
+  font-family: Poppins-Light;
+  src: url(../public/fonts/Poppins-Light.ttf);
+} 
+
+@font-face {
+  font-family: Poppins-Bold;
+  src: url(../public/fonts/Poppins-Bold.ttf);
+} 
+@font-face {
+  font-family: Poppins-ExtraLight;
+  src: url(../public/fonts/Poppins-ExtraLight.ttf);
+} 
+
+
+.f1{
+  font-family: Poppins-Light;
+}
+.f2{
+  font-family: Poppins-Medium;
+}
+.f3{
+  font-family: Poppins-Bold;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header-bg{
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.App{
+  margin-left:  15px;
+  margin-right: 15px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.icons-header{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin-top: 15px;
+  justify-content: space-evenly;
+}
+.menu-layout{
+    width: 70px;
+    /* height: 650px; */
+    margin-top: 20px;
+    border-top-right-radius: 22px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px !important;
+}
+.meny-layout ul li {
+  padding-left: none !important;
+  margin-bottom: 20px;
+}
+.chart-bg{
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px !important;
+}
+.bg-girl{
+  background-image: linear-gradient(#0A66C2, #5994CE);
+  border-radius: 3px;
+  margin-top: 106px;
+  height: 499px;
+}
+/* style={{margin:"110px",width:"58px",height:"79px"}} */
+.blue{
+  margin: 50px;
+  display: flex;
+}
+.office-girl{
+  position: absolute;
+}
+.office-girl-two{
+  position: relative;
+    top: -45px;
+    /* width: 219px; */
+}
+.sheet-img{
+  background-color: white;
+  padding: 25px;
+  border-radius: 2px;
+}
+.number{
+  font-size: 56px !important;
+  color: aliceblue !important;
+}
+.office-girl-button {
+  text-align: center;
+  margin-top: 0px;
+}
+.office-girl-button button{
+  width: 142px !important;
+  border: none !important;
+  height: 40px !important;
+}
+#customers {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#customers td, #customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+  
+}
+
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04AA6D;
   color: white;
 }
+.table{
+  border:1px solid black;
+}
+.cont1{
 
-.App-link {
-  color: #61dafb;
+  margin: 0px;
+  display: flex;
+  border-top:1px solid;
+
+}
+.p1{
+  border-right: 1px solid;
+  margin: 0px;
+padding-top: 14px;
+}
+.cont2{
+  display: inline-block;
+    justify-content: space-around;
+    width: 50%;
+    border-right: 1px solid;
+
+}
+.BT{
+  border-bottom: 1px solid;
+  padding: 10px;
+}
+table {
+  border: 2px solid forestgreen;
+  width: 800px;
+  height: 200px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+th {
+  border-bottom: 1px solid black;
+}
+
+td {
+  text-align: center;
+}
+.card-css{
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px !important;
+}
+.card-no{
+  background-color: #abd1f7 !important;
+  padding: 20px;
+  font-size: 30px;
+  color: #0A66C2 !important;
+
+}
+.card2{
+  background-color: #79bcfe !important;
+  padding: 20px;
+  font-size: 30px;
+  color: #ffffff !important;
+}
+.card3{
+  background-color: #063564 !important;
+  padding: 20px;
+  font-size: 30px;
+  color: #ffffff !important;
+}
+.card4{
+  background-color: #1A66C2 !important;
+  padding: 20px;
+  font-size: 30px;
+  color: #ffffff !important;
+}
+.total-css{
+  border-bottom: 1px solid #ebe7e7;
+  padding-bottom: 10px;
+}
+.menu-icon ul{
+  justify-content: end !important;
+}
+.main .ant-layout-header{
+  background-color:white !important; 
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px !important;
+}
+.sider-css aside{
+  background-color: white !important;
+  margin-top: 10px !important;
+}
+.tab-view{
+  padding-top: 16px !important;
+  margin-left: 40px !important;
+  color: #0A66C2 !important;
+}
+.filter{
+  display: flex;
+  justify-content: flex-end;
+}
+.filter-input{
+  width: 250px;
+  margin-right: 40px;
+}
+.filter-but{
+ border: none !important;
+
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px !important;
+}
+.role-icon{
+  display: flex;
+  justify-content: space-between;
+}
+.side-cont{
+  display: flex;
+  justify-content: space-between;
+}
+.side-button{
+  margin-left: 26px;
+  background-color: #0A66C2;
+  color: white;
+  border: 0px;
+}
+.v1{
+  font-size: 12px;
+  text-align: start;
+  margin-left: 27px;
+}
+.v2{
+  background-color: #0B74AD26 !important;
+  text-align: center;
+  padding: 2px;
+  border-radius: 5px;
+  width: 100p;
+  margin-left: 10px;
+  height: 66px;
+}
+.user-side{
+  padding-left: 20px;
+  padding-top: 10px;
+  display: flex;
+}
+.table-css table{
+  border: none !important;
+
+}
+.table-css th {
+  border-bottom: 1px solid #161616 !important;
+}
+/* .user-table .ant-table-cell{
+  border-inline-end: 1px solid !important;
+  border-bottom:1px solid black !important
+} */
+.user-table table {
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px !important;
+  border:none !important;
+  border-radius: 0px !important;
+}
+.user-table td{
+  font-family: 'Poppins-Medium' !important;
+}
+.user-button{
+  display: flex;
+  justify-content: space-around;
+  /* margin-top: 10px; */
+  border-top: none;
+  padding: 78px !important;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px !important;
+}
+.user-section{
+  display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    /* border: 1px saddlebrown; */
+    border-top: 1px solid !important;
+}
+.date-user{
+  width: 50%;
+  /* border-right: 1px solid; */
+}
+.user-card{
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px !important;
+  border-radius: 3px !important;
+}
+.scroll{
+  display: flex;
+  justify-content: space-around;
+}
+.user-row{
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px !important;
+  margin-top: 50px;
+}
+.card-main .ant-card-actions{
+  padding: 36px !important;
+  border-radius: 0px !important;
+
+}
+.card-main .ant-card-bordered{
+  border:0px !important;
+}
+.btn-1{
+  width: 165px !important;
+  height: 35px !important;
+  color: #0A66C2 !important;
+  border: 1px solid #0A66C2 !important;
+  border-radius: 0px !important;
+
+}
+.btn-2{
+  width: 165px !important;
+  height: 35px !important;
+  color: #ffffff!important;
+  border: 1px solid #0A66C2 !important;
+  border-radius: 0px !important;
+  background-color: #0A66C2 !important;
+}
+.circle-img{
+  border-radius: 50% !important;
+  border: 1px solid #0A66C2!important;
+}
+.level{
+  border-bottom: 1px solid #d9d9d9;
+  padding-bottom: 10px;
+}
+/* .calender .ant-picker-content{
+  border:0px !important;
+} */
+.calender th{
+  border-bottom: 0px !important;
+  padding: 8px !important;
+}
+.side-cal .ant-radio-group{
+  display: none !important;
+
+}
+
+.side-cal .ant-picker-calendar-header{
+justify-content: center !important;
+    text-align: center !important;
+}
+.side-cal .ant-picker-calendar-year-select{
+  display: none;
+}
+.side-cal .ant-select-selector{
+  width: 200px;
+  font-family: 'Poppins-Light' !important;
+}
+.side-cal .ant-picker-content{
+  border:0px !important
+}
+.side-cal th{
+  border-bottom: 0px !important;
+}
+.circle-img2{
+  border-radius: 50% !important;
+margin-top: 9px !important;
+}
+.last-but{
+  margin-top: 12px;
+  border: 1px solid #0A66C2 !important;
+  /* border: none; */
+  color: #0A66C2 !important;
+
+}
+
+.side-cal .ant-picker-panel{
+  font-family: 'Poppins-Light' !important;
+}
+.last-tab tbody{
+  font-family: 'Poppins-Light' !important;
+}
+.last-tab tr{
+  font-family: 'Poppins-ExtraLight' !important;
+}
+
+.tab-font .ant-tabs-nav-wrap{
+  font-family: 'Poppins-ExtraLight' !important;
+font-weight: 900 !important;
 }
